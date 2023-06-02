@@ -1,7 +1,7 @@
-import express, { Application, Request, Response } from "express";
-const app: Application = express();
-import userRoute from "../src/app/modules/users/user.route";
 import cors from "cors";
+import express, { Application, Request, Response } from "express";
+import userRoute from "../src/app/modules/users/user.route";
+const app: Application = express();
 
 app.use(cors());
 //parser
@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // application
+app.get("env");
 app.use("/api/v1/users/", userRoute);
 
 //testing
