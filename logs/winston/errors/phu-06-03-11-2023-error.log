@@ -1,0 +1,20 @@
+{
+  level: 'error',
+  message: 'Failed to connect Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"',
+  stack: 'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/node_modules/mongodb-connection-string-url/src/index.ts:133:13)\n' +
+    '    at parseOptions (/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/node_modules/mongodb/src/connection_string.ts:252:15)\n' +
+    '    at new MongoClient (/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/node_modules/mongodb/src/mongo_client.ts:341:34)\n' +
+    '    at _createMongoClient (/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/node_modules/mongoose/lib/connection.js:887:14)\n' +
+    '    at NativeConnection.openUri (/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/node_modules/mongoose/lib/connection.js:742:29)\n' +
+    '    at Mongoose.connect (/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/node_modules/mongoose/lib/index.js:406:15)\n' +
+    '    at /Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/src/server.ts:8:20\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at /Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/src/server.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  label: 'right meow!',
+  timestamp: 'Sat Jun 03 2023 11:15'
+}
+Sat Jun 03 2023 11:15 } [right meow!] error: Failed to connect Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+Sat Jun 03 2023 11:15 } [right meow!] error: Failed to connect Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+Sat Jun 03 2023 11:16 } [PHU] error: Failed to connect Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"

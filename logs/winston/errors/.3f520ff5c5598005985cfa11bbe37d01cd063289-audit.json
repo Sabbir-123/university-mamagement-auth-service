@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/logs/winston/errors/.3f520ff5c5598005985cfa11bbe37d01cd063289-audit.json",
+    "files": [
+        {
+            "date": 1685769210482,
+            "name": "/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/logs/winston/errors/phu-06-03-11-2023-error.log",
+            "hash": "a2851fdf9aa731bdd6bd94d5e8a21b95de5e30f5d8942573147277a7872dbbcb"
+        },
+        {
+            "date": 1685776250568,
+            "name": "/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/logs/winston/errors/phu-06-03-13-2023-error.log",
+            "hash": "39c9946d9b83f50c6664188c56dc5870ccca64c9dce18721f05e9e883c0e63ca"
+        },
+        {
+            "date": 1685787615463,
+            "name": "/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/logs/winston/errors/phu-06-03-16-2023-error.log",
+            "hash": "ecbedd82466214232143a52816651cf18d45da4bcb013037db3eec00e3908019"
+        },
+        {
+            "date": 1685802482329,
+            "name": "/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/logs/winston/errors/phu-06-03-20-2023-error.log",
+            "hash": "89f9a3e7dd33b95370b55b2767fd15d613cb66d74ba938cf5ee834c9fb3563b6"
+        },
+        {
+            "date": 1685805380034,
+            "name": "/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/logs/winston/errors/phu-06-03-21-2023-error.log",
+            "hash": "25b3271ff382502785a20eea6ec61196ea29201b865103632ddc5b970a694b43"
+        }
+    ],
+    "hashType": "sha256"
+}

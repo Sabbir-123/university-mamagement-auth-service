@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import app from "./app";
 import config from "./config/index";
+import { errorLogger, infoLogger } from "./shared/logger";
 
 async function prod() {
   try {
@@ -8,12 +9,12 @@ async function prod() {
       // useNewUrlParser: true,
       // useUnifiedTopology: true,
     });
-    console.log(" 🛢️ Connected to database");
+    infoLogger.info(" 🛢️ Connected to database");
     app.listen(config.port, () => {
-      console.log(` app listening on port ${config.port}`);
+      infoLogger.info(` app listening on port ${config.port}`);
     });
   } catch (err) {
-    console.log("Failed to connect", err);
+    errorLogger.error("Failed to connect", err);
   }
 }
 
