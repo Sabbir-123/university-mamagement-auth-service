@@ -1,0 +1,17 @@
+Tue Jun 06 2023 1:3 } [PHU] error: Uncaught Exception deteced logger is not defined
+Tue Jun 06 2023 1:7 } [PHU] error: Uncaught Exception deteced logger is not defined
+Tue Jun 06 2023 1:7 } [PHU] error: Uncaught Exception deteced logger is not defined
+Tue Jun 06 2023 1:13 } [PHU] error: Testing
+Tue Jun 06 2023 1:34 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Tue Jun 06 2023 1:38 } [PHU] error: globalerror User validation failed: role: Path `role` is required.

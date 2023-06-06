@@ -52,7 +52,7 @@ const errorLogger = createLogger({
     timestamp({
       format: "ddd MMM DD YYYY HH:mm",
     }),
-    //   prettyPrint(),
+
     myFormat
   ),
   transports: [

@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import cors from "cors";
 import express, { Application } from "express";
-import userRoute from "../src/app/modules/users/user.route";
 import globalErrorHandler from "./app/middlewares/global.errorHandler";
+import { UserRoutes } from "./app/modules/users/user.route";
 const app: Application = express();
 
 app.use(cors());
@@ -11,13 +13,11 @@ app.use(express.urlencoded({ extended: true }));
 
 // application
 app.get("env");
-app.use("/api/v1/users/", userRoute);
+app.use("/api/v1/users/", UserRoutes);
 
 // //testing
-// app.get("/", async (req: Request, res: Response, next:NextFunction) => {
-//   // res.send("Server is working");
-//   // next("orrree bababa error")
-//   throw new Error('oore')
+// app.get("/", async(req: Request, res: Response,) => {
+//   throw new Error("Testing")
 // });
 
 // global error handler
