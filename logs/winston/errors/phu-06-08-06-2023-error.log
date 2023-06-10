@@ -1,0 +1,21 @@
+Thu Jun 08 2023 6:7 } [PHU] error: globalerror Invalid Semester code
+Thu Jun 08 2023 6:7 } [PHU] error: globalerror This semester already exist
+Thu Jun 08 2023 6:7 } [PHU] error: globalerror Invalid Semester code
+Thu Jun 08 2023 6:7 } [PHU] error: globalerror [
+  {
+    "received": "Summer",
+    "code": "invalid_enum_value",
+    "options": [
+      "Autumn",
+      "Spring",
+      "Fall"
+    ],
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Invalid enum value. Expected 'Autumn' | 'Spring' | 'Fall', received 'Summer'"
+  }
+]
+Thu Jun 08 2023 6:15 } [PHU] error: globalerror This semester already exist
+Thu Jun 08 2023 6:15 } [PHU] error: globalerror This semester already exist

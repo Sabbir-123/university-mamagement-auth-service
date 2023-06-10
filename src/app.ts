@@ -1,7 +1,12 @@
-import express, { Application, Request, Response } from "express";
-const app: Application = express();
-import userRoute from "../src/app/modules/users/user.route";
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import cors from "cors";
+import express, { Application, NextFunction, Request, Response } from "express";
+import httpStatus from "http-status";
+import globalErrorHandler from "./app/middlewares/global.errorHandler";
+import routes from "./routes/routes";
+
+const app: Application = express();
 
 app.use(cors());
 //parser
@@ -9,11 +14,30 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // application
-app.use("/api/v1/users/", userRoute);
+app.get("env");
 
-//testing
-app.get("/", async (req: Request, res: Response) => {
-  res.send("Server is working");
+app.use("/api/v1", routes);
+
+// //testing
+// app.get("/", async(req: Request, res: Response,) => {
+//   throw new Error("Testing")
+// });
+
+// global error handler
+app.use(globalErrorHandler);
+// handle not found
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: "Not found",
+    errorMessages: [
+      {
+        path: req?.originalUrl,
+        message: "API not found",
+      },
+    ],
+  });
+  next();
 });
 
 export default app;
