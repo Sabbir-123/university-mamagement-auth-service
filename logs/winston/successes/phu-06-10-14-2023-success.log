@@ -1,0 +1,12 @@
+{
+  message: ' 🛢️ Connected to database',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Sat Jun 10 2023 14:29'
+}
+{
+  message: ' app listening on port 9000',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Sat Jun 10 2023 14:29'
+}

@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import cors from "cors";
-import express, { Application } from "express";
+import express, { Application, NextFunction, Request, Response } from "express";
+import httpStatus from "http-status";
 import globalErrorHandler from "./app/middlewares/global.errorHandler";
 import routes from "./routes/routes";
 
@@ -14,8 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // application
 app.get("env");
-// app.use("/api/v1/users/", UserRoutes);
-// app.use("/api/v1/academic-semester/", SemesterRoutes);
+
 app.use("/api/v1", routes);
 
 // //testing
@@ -25,5 +25,19 @@ app.use("/api/v1", routes);
 
 // global error handler
 app.use(globalErrorHandler);
+// handle not found
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: "Not found",
+    errorMessages: [
+      {
+        path: req?.originalUrl,
+        message: "API not found",
+      },
+    ],
+  });
+  next();
+});
 
 export default app;
