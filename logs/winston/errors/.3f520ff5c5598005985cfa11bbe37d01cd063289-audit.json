@@ -69,6 +69,11 @@
             "date": 1686077104542,
             "name": "/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/logs/winston/errors/phu-06-07-00-2023-error.log",
             "hash": "f3479d38184ce2a83a1a7764de104dd210d0367db91a1e3ed8c1cc55a6715432"
+        },
+        {
+            "date": 1686370802687,
+            "name": "/Users/mdsabbirahmed/Downloads/All Web Level 2/NoSQL Backend/University-management-system/logs/winston/errors/phu-06-10-10-2023-error.log",
+            "hash": "62baccefa3c8cc8b0cef6194e6ccd1fb9c87e365e8f314952a408132258d5937"
         }
     ],
     "hashType": "sha256"
