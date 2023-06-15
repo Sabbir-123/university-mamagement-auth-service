@@ -1,0 +1,28 @@
+Thu Jun 15 2023 21:38 } [PHU] error: This semester already exist
+Thu Jun 15 2023 21:46 } [PHU] error: This semester already exist
+Thu Jun 15 2023 21:50 } [PHU] error: This semester already exist
+Thu Jun 15 2023 21:53 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Thu Jun 15 2023 21:56 } [PHU] error: globalerror [
+  {
+    "expected": "'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "startMonth"
+    ],
+    "message": "Start Month is required"
+  }
+]
+Thu Jun 15 2023 21:57 } [PHU] error: This semester already exist
