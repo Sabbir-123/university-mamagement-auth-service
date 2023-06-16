@@ -166,3 +166,39 @@
   label: 'PHU',
   timestamp: 'Fri Jun 16 2023 20:29'
 }
+{
+  message: ' 🛢️ Connected to database',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Fri Jun 16 2023 20:53'
+}
+{
+  message: ' app listening on port 9000',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Fri Jun 16 2023 20:53'
+}
+{
+  message: ' 🛢️ Connected to database',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Fri Jun 16 2023 20:55'
+}
+{
+  message: ' app listening on port 9000',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Fri Jun 16 2023 20:55'
+}
+{
+  message: ' 🛢️ Connected to database',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Fri Jun 16 2023 20:55'
+}
+{
+  message: ' app listening on port 9000',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Fri Jun 16 2023 20:55'
+}
