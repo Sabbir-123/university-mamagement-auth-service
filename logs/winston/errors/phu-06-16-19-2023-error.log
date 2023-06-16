@@ -1,0 +1,25 @@
+Fri Jun 16 2023 19:22 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "body",
+      "year"
+    ],
+    "message": "Expected string, received number"
+  }
+]
+Fri Jun 16 2023 19:41 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "body",
+      "year"
+    ],
+    "message": "Expected string, received number"
+  }
+]
+Fri Jun 16 2023 19:41 } [PHU] error: globalerror This semester already exist

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-console */
 /* eslint-disable no-undef */
@@ -9,6 +10,7 @@ import { ZodError } from "zod";
 import { IGenericErrorMessage } from "../../Interfaces/error";
 import config from "../../config";
 import ApiError from "../../error/ApiError";
+import handleCastError from "../../error/handleCastError";
 import handleValidationError from "../../error/handleValidationError";
 import handleZodError from "../../error/handleZodError";
 import { errorLogger } from "../../shared/logger";
@@ -33,6 +35,11 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
     statusCode = simplifiedError?.statusCode;
     message = simplifiedError?.message;
     errorMesages = simplifiedError?.errorMesages;
+  } else if (err?.name === "CastError") {
+    const simplifiedError = handleCastError(err);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMesages = simplifiedError.errorMesages;
   } else if (err instanceof ApiError) {
     statusCode = err?.statusCode;
     message = err?.message;
@@ -62,7 +69,6 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
     errorMesages,
     stack: config.env !== "production" ? err?.stack : undefined,
   });
-  next();
 };
 
 export default globalErrorHandler;
