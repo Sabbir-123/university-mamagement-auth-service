@@ -34,3 +34,15 @@
   label: 'PHU',
   timestamp: 'Fri Jun 16 2023 21:12'
 }
+{
+  message: ' 🛢️ Connected to database',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Fri Jun 16 2023 21:19'
+}
+{
+  message: ' app listening on port 9000',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Fri Jun 16 2023 21:19'
+}
