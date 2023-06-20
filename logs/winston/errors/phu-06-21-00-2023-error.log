@@ -1,0 +1,25 @@
+Wed Jun 21 2023 0:12 } [PHU] error: globalerror Transaction numbers are only allowed on a replica set member or mongos
+Wed Jun 21 2023 0:18 } [PHU] error: globalerror Transaction numbers are only allowed on a replica set member or mongos
+Wed Jun 21 2023 0:26 } [PHU] error: globalerror Transaction numbers are only allowed on a replica set member or mongos
+Wed Jun 21 2023 0:26 } [PHU] error: globalerror Transaction numbers are only allowed on a replica set member or mongos
+Wed Jun 21 2023 0:27 } [PHU] error: globalerror Transaction numbers are only allowed on a replica set member or mongos
+Wed Jun 21 2023 0:27 } [PHU] error: globalerror Transaction numbers are only allowed on a replica set member or mongos
+Wed Jun 21 2023 0:27 } [PHU] error: globalerror Transaction numbers are only allowed on a replica set member or mongos
+Wed Jun 21 2023 0:27 } [PHU] error: globalerror Transaction numbers are only allowed on a replica set member or mongos
+Wed Jun 21 2023 0:27 } [PHU] error: globalerror Cannot read properties of null (reading 'year')
+Wed Jun 21 2023 0:28 } [PHU] error: globalerror Cannot read properties of null (reading 'year')
+Wed Jun 21 2023 0:31 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "user@gmail.com" }
+Wed Jun 21 2023 0:31 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "user@gmail.com" }
+Wed Jun 21 2023 0:31 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: contactNo_1 dup key: { contactNo: "user_4" }
+Wed Jun 21 2023 0:31 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: contactNo_1 dup key: { contactNo: "user_4" }
+Wed Jun 21 2023 0:31 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: contactNo_1 dup key: { contactNo: "user_4" }
+Wed Jun 21 2023 0:33 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "S700100001" }
+Wed Jun 21 2023 0:33 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "S700100001" }
+Wed Jun 21 2023 0:34 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "S700100001" }
+Wed Jun 21 2023 0:36 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "S700100001" }
+Wed Jun 21 2023 0:36 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "S700100001" }
+Wed Jun 21 2023 0:36 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "S700100001" }
+Wed Jun 21 2023 0:37 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "S700100001" }
+Wed Jun 21 2023 0:39 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "700100001" }
+Wed Jun 21 2023 0:39 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "700100001" }
+Wed Jun 21 2023 0:40 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "700100001" }

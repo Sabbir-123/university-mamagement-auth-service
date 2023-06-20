@@ -1,5 +1,4 @@
 import { SortOrder } from "mongoose";
-
 import {
   IGenericResponse,
   IpaginationOptions,

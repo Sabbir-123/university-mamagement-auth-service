@@ -1,0 +1,14 @@
+Mon Jun 19 2023 21:3 } [PHU] error: globalerror Cannot set properties of undefined (setting 'id')
+Mon Jun 19 2023 21:3 } [PHU] error: globalerror Cannot set properties of undefined (setting 'id')
+Mon Jun 19 2023 21:5 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "S250300NaN" }
+Mon Jun 19 2023 21:7 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "S250300NaN" }
+Mon Jun 19 2023 21:10 } [PHU] error: globalerror increamentedId is not defined
+Mon Jun 19 2023 21:27 } [PHU] error: lastStudent is not defined
+Mon Jun 19 2023 21:33 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "S250300001" }
+Mon Jun 19 2023 21:33 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "S250300001" }
+Mon Jun 19 2023 21:34 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "S250300001" }
+Mon Jun 19 2023 21:34 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "S250300001" }
+Mon Jun 19 2023 21:35 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "S250300001" }
+Mon Jun 19 2023 21:37 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "S250300001" }
+Mon Jun 19 2023 21:37 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "S250300001" }
+Mon Jun 19 2023 21:38 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "S250300001" }

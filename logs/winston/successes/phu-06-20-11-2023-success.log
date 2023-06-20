@@ -1,0 +1,36 @@
+{
+  message: ' 🛢️ Connected to database',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Tue Jun 20 2023 11:00'
+}
+{
+  message: ' app listening on port 9000',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Tue Jun 20 2023 11:00'
+}
+{
+  message: ' 🛢️ Connected to database',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Tue Jun 20 2023 11:02'
+}
+{
+  message: ' app listening on port 9000',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Tue Jun 20 2023 11:02'
+}
+{
+  message: ' 🛢️ Connected to database',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Tue Jun 20 2023 11:02'
+}
+{
+  message: ' app listening on port 9000',
+  level: 'info',
+  label: 'PHU',
+  timestamp: 'Tue Jun 20 2023 11:02'
+}
