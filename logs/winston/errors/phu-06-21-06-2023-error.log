@@ -1,0 +1,2 @@
+Wed Jun 21 2023 6:20 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: id_1 dup key: { id: "700100001" }
+Wed Jun 21 2023 6:50 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "user123@gmail.com" }

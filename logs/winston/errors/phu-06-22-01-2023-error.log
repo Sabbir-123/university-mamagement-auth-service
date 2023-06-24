@@ -1,0 +1,62 @@
+Thu Jun 22 2023 1:35 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty"
+    ],
+    "message": "Required"
+  }
+]
+Thu Jun 22 2023 1:35 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty"
+    ],
+    "message": "Required"
+  }
+]
+Thu Jun 22 2023 1:37 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "string",
+    "path": [
+      "body",
+      "faculty"
+    ],
+    "message": "Expected object, received string"
+  }
+]
+Thu Jun 22 2023 1:40 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "null",
+    "path": [
+      "body",
+      "faculty",
+      "profileImage"
+    ],
+    "message": "Expected string, received null"
+  }
+]
+Thu Jun 22 2023 1:44 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+Thu Jun 22 2023 1:45 } [PHU] error: globalerror Admin validation failed: managementDepartment: Cast to ObjectId failed for value "Finance" (type string) at path "managementDepartment" because of "BSONError"

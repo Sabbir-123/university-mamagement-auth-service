@@ -1,0 +1,7 @@
+Sat Jun 24 2023 16:3 } [PHU] error: globalerror Cannot populate path `Management` because it is not in your schema. Set the `strictPopulate` option to false to override.
+Sat Jun 24 2023 16:4 } [PHU] error: globalerror admin_model_1.Admin.findById(...).strictPopulate is not a function
+Sat Jun 24 2023 16:5 } [PHU] error: globalerror Cannot populate path `ManagementDepartment` because it is not in your schema. Set the `strictPopulate` option to false to override.
+Sat Jun 24 2023 16:9 } [PHU] error: globalerror Admin not found !
+Sat Jun 24 2023 16:11 } [PHU] error: globalerror Admin not found !
+Sat Jun 24 2023 16:13 } [PHU] error: globalerror Cast to ObjectId failed for value "{ id: '6495e37bb611b29499735ca4' }" (type Object) at path "_id" for model "Admin"
+Sat Jun 24 2023 16:20 } [PHU] error: globalerror Cannot populate path `ManagementDepartment` because it is not in your schema. Set the `strictPopulate` option to false to override.

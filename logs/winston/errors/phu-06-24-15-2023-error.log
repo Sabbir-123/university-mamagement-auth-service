@@ -1,0 +1,17 @@
+Sat Jun 24 2023 15:48 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "name"
+    ],
+    "message": "Required"
+  }
+]
+Sat Jun 24 2023 15:49 } [PHU] error: globalerror Admin not found !
+Sat Jun 24 2023 15:49 } [PHU] error: globalerror Admin not found !
+Sat Jun 24 2023 15:53 } [PHU] error: globalerror Cannot populate path `ManagementDepartment` because it is not in your schema. Set the `strictPopulate` option to false to override.
+Sat Jun 24 2023 15:53 } [PHU] error: globalerror Cannot populate path `ManagementDepartment` because it is not in your schema. Set the `strictPopulate` option to false to override.
+Sat Jun 24 2023 15:55 } [PHU] error: globalerror Cannot populate path `ManagementDepartment` because it is not in your schema. Set the `strictPopulate` option to false to override.

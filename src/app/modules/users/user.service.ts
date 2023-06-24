@@ -1,35 +1,45 @@
+import httpStatus from "http-status";
 import mongoose from "mongoose";
 import config from "../../../config/index";
 import ApiError from "../../../error/ApiError";
 import { AcademicSemester } from "../academicSemester/academicSemesterModel";
+import { IAdmin } from "../admin/admin.interface";
+import { Admin } from "../admin/admin.model";
+import { IFaculty } from "../faculty/faculty.interface";
+import { Faculty } from "../faculty/faculty.model";
 import { IStudent } from "../students/students.interface";
-
-import httpStatus from "http-status";
 import { Student } from "../students/students.model";
 import { IUser } from "./user.interface";
 import { User } from "./user.model";
-import { generateStudentId } from "./user.util";
+import {
+  generateAdminId,
+  generateFacultyId,
+  generateStudentId,
+} from "./user.util";
 
 const createStudent = async (
   student: IStudent,
   user: IUser
 ): Promise<IUser | null> => {
-  // auto generated increamental id
-
-  // deault password
-  if (!user?.password) {
-    user.password = config?.default_Student_Pass as string;
+  // default password
+  if (!user.password) {
+    user.password = config.default_student_pass as string;
   }
+
+  //hashing
+  // set role
   user.role = "student";
 
-  const academicSemester = await AcademicSemester.findById(
-    student?.academicSemester
+  const academicsemester = await AcademicSemester.findById(
+    student.academicSemester
   );
-  const session = await mongoose.startSession();
+
+  // generate student id
   let newUserAllData = null;
+  const session = await mongoose.startSession();
   try {
     session.startTransaction();
-    const id = await generateStudentId(academicSemester);
+    const id = await generateStudentId(academicsemester);
     user.id = id;
     student.id = id;
 
@@ -37,21 +47,19 @@ const createStudent = async (
     const newStudent = await Student.create([student], { session });
 
     if (!newStudent.length) {
-      throw new ApiError("Failed to create Student", httpStatus.BAD_REQUEST);
+      throw new ApiError("Failed to create student", httpStatus.BAD_REQUEST);
     }
 
-    //set student ---> _id into user.student
-    // student create howar por student _id ta user.student te set kore ref hishbe use kora hcche
+    //set student -->  _id into user.student
     user.student = newStudent[0]._id;
+
     const newUser = await User.create([user], { session });
 
     if (!newUser.length) {
-      throw new ApiError("Failed to create User", httpStatus.BAD_REQUEST);
+      throw new ApiError("Failed to create user", httpStatus.BAD_REQUEST);
     }
-
     newUserAllData = newUser[0];
 
-    console.log("newUser", newUser, "newStudent", newStudent);
     await session.commitTransaction();
     await session.endSession();
   } catch (error) {
@@ -59,6 +67,8 @@ const createStudent = async (
     await session.endSession();
     throw error;
   }
+
+  //user --> student ---> academicSemester, academicDepartment , academicFaculty
 
   if (newUserAllData) {
     newUserAllData = await User.findOne({ id: newUserAllData.id }).populate({
@@ -76,9 +86,133 @@ const createStudent = async (
       ],
     });
   }
+
+  return newUserAllData;
+};
+
+const createFaculty = async (
+  faculty: IFaculty,
+  user: IUser
+): Promise<IUser | null> => {
+  // default password
+  if (!user.password) {
+    user.password = config.default_faculty_pass as string;
+  }
+
+  // set role
+  user.role = "faculty";
+
+  // generate faculty id
+  let newUserAllData = null;
+  const session = await mongoose.startSession();
+  try {
+    session.startTransaction();
+
+    const id = await generateFacultyId();
+    user.id = id;
+    faculty.id = id;
+
+    const newFaculty = await Faculty.create([faculty], { session });
+
+    if (!newFaculty.length) {
+      throw new ApiError("Failed to create faculty ", httpStatus.BAD_REQUEST);
+    }
+
+    user.faculty = newFaculty[0]._id;
+
+    const newUser = await User.create([user], { session });
+
+    if (!newUser.length) {
+      throw new ApiError("Failed to create faculty", httpStatus.BAD_REQUEST);
+    }
+    newUserAllData = newUser[0];
+
+    await session.commitTransaction();
+    await session.endSession();
+  } catch (error) {
+    await session.abortTransaction();
+    await session.endSession();
+    throw error;
+  }
+
+  if (newUserAllData) {
+    newUserAllData = await User.findOne({ id: newUserAllData.id }).populate({
+      path: "faculty",
+      populate: [
+        {
+          path: "academicDepartment",
+        },
+        {
+          path: "academicFaculty",
+        },
+      ],
+    });
+  }
+
+  return newUserAllData;
+};
+
+const createAdmin = async (
+  admin: IAdmin,
+  user: IUser
+): Promise<IUser | null> => {
+  // default password
+  if (!user.password) {
+    user.password = config.default_admin_pass as string;
+  }
+
+  // set role
+  user.role = "admin";
+
+  // generate faculty id
+  let newUserAllData = null;
+  const session = await mongoose.startSession();
+  try {
+    session.startTransaction();
+
+    const id = await generateAdminId();
+    user.id = id;
+    admin.id = id;
+
+    const newAdmin = await Admin.create([admin], { session });
+
+    if (!newAdmin.length) {
+      throw new ApiError("Failed to create faculty", httpStatus.BAD_REQUEST);
+    }
+
+    user.admin = newAdmin[0]._id;
+
+    const newUser = await User.create([user], { session });
+
+    if (!newUser.length) {
+      throw new ApiError("Failed to create admin", httpStatus.BAD_REQUEST);
+    }
+    newUserAllData = newUser[0];
+
+    await session.commitTransaction();
+    await session.endSession();
+  } catch (error) {
+    await session.abortTransaction();
+    await session.endSession();
+    throw error;
+  }
+
+  if (newUserAllData) {
+    newUserAllData = await User.findOne({ id: newUserAllData.id }).populate({
+      path: "admin",
+      populate: [
+        {
+          path: "managementDepartment",
+        },
+      ],
+    });
+  }
+
   return newUserAllData;
 };
 
 export const UserService = {
   createStudent,
+  createAdmin,
+  createFaculty,
 };

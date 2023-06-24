@@ -1,0 +1,8 @@
+Sat Jun 24 2023 0:18 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.managementdepartments index: title_1 dup key: { title: "CSE Dept Maanagement" }
+Sat Jun 24 2023 0:20 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "user120@gmail.com" }
+Sat Jun 24 2023 0:21 } [PHU] error: globalerror Student not found !
+Sat Jun 24 2023 0:22 } [PHU] error: globalerror Cast to ObjectId failed for value "700100001" (type string) at path "_id" for model "Student"
+Sat Jun 24 2023 0:22 } [PHU] error: globalerror Admin validation failed: managementDepartment: Cast to ObjectId failed for value "Finance" (type string) at path "managementDepartment" because of "BSONError"
+Sat Jun 24 2023 0:23 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "janesmith@example.com" }
+Sat Jun 24 2023 0:23 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.faculties index: contactNo_1 dup key: { contactNo: "9876543210" }
+Sat Jun 24 2023 0:27 } [PHU] error: globalerror Cannot populate path `ManagementDepartment` because it is not in your schema. Set the `strictPopulate` option to false to override.
