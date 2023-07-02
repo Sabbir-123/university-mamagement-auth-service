@@ -9,6 +9,7 @@ import { IStudent } from "./students.interface";
 import { StudentService } from "./students.service";
 
 const getAllStudents = catchAsync(async (req: Request, res: Response) => {
+  console.log(req.query);
   const filters = pick(req.query, studentFilterableFields);
   const paginationOptions = pick(req.query, paginationFields);
 

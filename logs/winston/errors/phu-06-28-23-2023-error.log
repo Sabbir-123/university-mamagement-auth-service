@@ -1,0 +1,10 @@
+Wed Jun 28 2023 23:35 } [PHU] error: globalerror E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "janesmitshs@example.com" }
+Wed Jun 28 2023 23:40 } [PHU] error: globalerror Forbidden
+Wed Jun 28 2023 23:40 } [PHU] error: globalerror Forbidden
+Wed Jun 28 2023 23:42 } [PHU] error: globalerror Forbidden
+Wed Jun 28 2023 23:42 } [PHU] error: globalerror Forbidden
+Wed Jun 28 2023 23:42 } [PHU] error: globalerror Forbidden
+Wed Jun 28 2023 23:42 } [PHU] error: globalerror Forbidden
+Wed Jun 28 2023 23:42 } [PHU] error: globalerror Forbidden
+Wed Jun 28 2023 23:42 } [PHU] error: globalerror Forbidden
+Wed Jun 28 2023 23:44 } [PHU] error: globalerror Forbidden

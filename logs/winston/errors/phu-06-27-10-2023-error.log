@@ -1,0 +1,27 @@
+Tue Jun 27 2023 10:18 } [PHU] error: globalerror Invalid Refresh Token
+Tue Jun 27 2023 10:22 } [PHU] error: globalerror Cast to ObjectId failed for value "700100002" (type string) at path "_id" for model "Student"
+Tue Jun 27 2023 10:25 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "cookies",
+      "refreshToken"
+    ],
+    "message": "Refresh Token is required"
+  }
+]
+Tue Jun 27 2023 10:26 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "cookies",
+      "refreshToken"
+    ],
+    "message": "Refresh Token is required"
+  }
+]
+Tue Jun 27 2023 10:38 } [PHU] error: globalerror Cast to ObjectId failed for value "{ id: '700100004' }" (type Object) at path "_id" for model "Student"

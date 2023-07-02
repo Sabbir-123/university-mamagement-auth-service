@@ -1,27 +1,23 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import cookieParser from "cookie-parser";
 import cors from "cors";
 import express, { Application, NextFunction, Request, Response } from "express";
 import httpStatus from "http-status";
 import globalErrorHandler from "./app/middlewares/global.errorHandler";
 import routes from "./routes/routes";
-
 const app: Application = express();
 
 app.use(cors());
 //parser
 app.use(express.json());
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
 // application
 app.get("env");
 
 app.use("/api/v1", routes);
-
-// //testing
-// app.get("/", async(req: Request, res: Response,) => {
-//   throw new Error("Testing")
-// });
 
 // global error handler
 app.use(globalErrorHandler);

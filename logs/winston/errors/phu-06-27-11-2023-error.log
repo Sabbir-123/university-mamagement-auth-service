@@ -1,0 +1,16 @@
+Tue Jun 27 2023 11:5 } [PHU] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]
+Tue Jun 27 2023 11:6 } [PHU] error: globalerror User not found
+Tue Jun 27 2023 11:6 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "cookies",
+      "refreshToken"
+    ],
+    "message": "Refresh Token is required"
+  }
+]
+Tue Jun 27 2023 11:6 } [PHU] error: globalerror user not found
+Tue Jun 27 2023 11:6 } [PHU] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]

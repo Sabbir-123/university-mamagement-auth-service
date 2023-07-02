@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import config from "../../../config/index";
 import ApiError from "../../../error/ApiError";
 import { AcademicSemester } from "../academicSemester/academicSemesterModel";
+import { IAcademicSemester } from "../academicSemester/academinSemester.interface";
 import { IAdmin } from "../admin/admin.interface";
 import { Admin } from "../admin/admin.model";
 import { IFaculty } from "../faculty/faculty.interface";
@@ -26,20 +27,21 @@ const createStudent = async (
     user.password = config.default_student_pass as string;
   }
 
-  //hashing
   // set role
   user.role = "student";
 
   const academicsemester = await AcademicSemester.findById(
     student.academicSemester
-  );
+  ).lean();
 
   // generate student id
   let newUserAllData = null;
   const session = await mongoose.startSession();
   try {
     session.startTransaction();
-    const id = await generateStudentId(academicsemester);
+
+    const id = await generateStudentId(academicsemester as IAcademicSemester);
+
     user.id = id;
     student.id = id;
 
@@ -67,8 +69,6 @@ const createStudent = async (
     await session.endSession();
     throw error;
   }
-
-  //user --> student ---> academicSemester, academicDepartment , academicFaculty
 
   if (newUserAllData) {
     newUserAllData = await User.findOne({ id: newUserAllData.id }).populate({
