@@ -2,23 +2,23 @@
   message: ' 🛢️ Connected to database',
   level: 'info',
   label: 'PHU',
-  timestamp: 'Fri Jun 16 2023 19:15'
+  timestamp: 'Mon Jul 03 2023 18:30'
 }
 {
   message: ' app listening on port 9000',
   level: 'info',
   label: 'PHU',
-  timestamp: 'Fri Jun 16 2023 19:15'
+  timestamp: 'Mon Jul 03 2023 18:30'
 }
 {
   message: ' 🛢️ Connected to database',
   level: 'info',
   label: 'PHU',
-  timestamp: 'Fri Jun 16 2023 19:52'
+  timestamp: 'Mon Jul 03 2023 18:31'
 }
 {
   message: ' app listening on port 9000',
   level: 'info',
   label: 'PHU',
-  timestamp: 'Fri Jun 16 2023 19:52'
+  timestamp: 'Mon Jul 03 2023 18:31'
 }

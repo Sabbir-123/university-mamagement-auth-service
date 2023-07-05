@@ -1,0 +1,24 @@
+Wed Jul 05 2023 15:48 } [PHU] error: globalerror [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "oldPassword"
+    ],
+    "message": "Old password  is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "newPassword"
+    ],
+    "message": "New password  is required"
+  }
+]
+Wed Jul 05 2023 15:49 } [PHU] error: globalerror Password is incorrect
+Wed Jul 05 2023 15:52 } [PHU] error: globalerror Password is incorrect

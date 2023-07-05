@@ -1,1 +1,0 @@
-Mon Jun 19 2023 13:24 } [PHU] error: globalerror AcademicDepartment validation failed: academicFaculty: Cast to ObjectId failed for value " 6490028974762cd6cd6ea4b1" (type string) at path "academicFaculty" because of "BSONError"
